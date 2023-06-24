@@ -1,5 +1,5 @@
 num1={1,2,3,4,5,6}
-num2=set([7,9,5,4,10])
+num2=set([8,11,5,4,10])
 
 print(num1 | num2)
 print(num1 & num2)
