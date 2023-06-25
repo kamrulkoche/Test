@@ -8,6 +8,6 @@
 7.Casing:8000
 8.FAN:3000
 9.UPS:5000
-10.keyboard and mouse:5000
+10.keyboard and mouse:50000
 
 
