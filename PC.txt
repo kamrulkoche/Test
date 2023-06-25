@@ -1,0 +1,13 @@
+1.Monitor:17000
+2.GPU:43000
+3.processor i5 12 Gen F:18500
+4.Maatherboard:27000
+4.RAM:5700 3200MHZ /6300MHZ
+5.SSD:5000
+6.Hard disk:5000
+7.Casing:8000
+8.FAN:3000
+9.UPS:5000
+10.keyboard and mouse:5000
+
+
