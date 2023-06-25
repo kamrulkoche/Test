@@ -1,0 +1,23 @@
+@Post(('/upload'))
+    @UseInterceptors(FileInterceptor('myfile',
+    { fileFilter: (req, file, cb) => {
+    if (file.originalname.match(/^.*\.(jpg|webp|png|jpeg)$/))
+     cb(null, true);
+    else {
+    cb(new MulterError('LIMIT_UNEXPECTED_FILE', 'image'), false);
+    }
+    },
+    limits: { fileSize: 300000 },
+    storage:diskStorage({
+    destination: './uploads',
+    filename: function (req, file, cb) {
+    cb(null,Date.now()+file.originalname)
+    },
+    })
+    }
+    ))
+    uploadFile(@UploadedFile() myfileobj: Express.Multer.File):object
+    {
+    console.log(myfileobj)   
+    return ({message:"file uploaded"});
+    }
